@@ -1,0 +1,58 @@
+$light-grey: #C3C3C3;
+
+.divider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 43.75em) {
+    .divider {
+        flex-direction: row;
+        border-bottom: 1px solid $light-grey;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .vehicle-card:only-child {
+            width: 50%;
+        }
+    }
+
+}
+
+@media (min-width: 68.75em) {
+    .divider {
+        width: 40%;
+        border-bottom: none;
+
+        &:first-child {
+            .vehicle-card {
+                &:first-child {
+                    border-left: 2px solid $light-grey;
+                }
+            }
+        }
+
+        &:last-child {
+            width: 20%;
+
+            .vehicle-card {
+                &:last-child {
+                    border-right: 2px solid $light-grey;
+                }
+            }
+        }
+
+        .vehicle-card {
+            &:only-child {
+                width: 100%;
+            }
+
+            &:not(:only-child) {
+                width: 50%;
+            }
+        }
+    }
+}

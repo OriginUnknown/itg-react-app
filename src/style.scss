@@ -1,5 +1,20 @@
-$bg-colour: #ccc;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
-body {
-	background-color: $bg-colour;
+p {
+	line-height: 1.5rem;
+}
+
+h1 { 
+	font-size: 2em;
+	line-height: 1.25em;
+}
+
+h2 { 
+	font-size: 1.5em;
+	line-height: 1.25em;
 }

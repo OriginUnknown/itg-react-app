@@ -1,0 +1,42 @@
+$dark-grey: #3C3C3C;
+
+.content {
+    width: 60%;
+    padding: 1rem;
+
+    h1.to-uppercase {
+        text-transform: uppercase;
+    }
+
+    .price,
+    .description {
+        margin-bottom: 1rem;
+    }
+
+    .dark-grey-color {
+        color: $dark-grey;
+    }
+}
+
+@media (min-width: 43.75em) {
+    .content {
+        width: 100%;
+        text-align: center;
+
+        h1.to-uppercase {
+            margin: 0 1.5rem 1rem 1.5rem;
+            border-top: 1px solid $dark-grey;
+            border-bottom: 1px solid $dark-grey;
+        }
+    }
+}
+
+@media (min-width: 68.75em) {
+    h1 {
+        font-size: 1.5rem;
+
+        .to-uppercase {
+            margin: 0 1.5rem 1rem 1.5rem;
+        }
+    }
+}
